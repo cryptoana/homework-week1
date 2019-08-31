@@ -1,0 +1,9 @@
+img {
+    width: 100px;
+    height: 100px;
+}
+
+#myDiv {
+    border-radius: 10px;
+    background-color: #ebebe0;
+}
