@@ -12,7 +12,7 @@ const hero = {
     }
 };
 
-//Rest Function
+//Rest function
 function rest (obj) {
     if (obj.health == 10) {
         alert("You are good to go!");
@@ -28,7 +28,7 @@ health.addEventListener('click', function(obj) {
     rest(hero);
 });
 
-//PickUp Function
+//PickUp function
 function pickUpItem (obj, obj2) {
     obj.inventory.push(obj2);
 };
@@ -39,7 +39,7 @@ dagger.addEventListener('click', function() {
     pickUpItem(hero, {"type": "dagger", "damage": 2});
 });
 
-//EquipWeapon Function
+//EquipWeapon function
 function equipWeapon (obj) {
     if (obj.inventory.length >= 1) {
         obj.weapon = obj.inventory[0];
@@ -70,8 +70,26 @@ function displayStats() {
     myDiv.style.color = "#ff0000";
     myDiv.style.margin = "10px";
     myDiv.style.border = "1px solid black";
-    myDiv.style.width = "130px";
+    myDiv.style.width = "140px";
     myDiv.style.padding = "10px";
 }
 
 displayStats();
+
+function changeName (obj) {
+    //allows user to change name and display new details
+    const form = document.querySelector('form');
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        const inputField = document.getElementById("name")
+        const newName = inputField.value;
+        if (obj.name !== newName) {
+            obj.name = newName;
+            displayStats();
+        }
+        inputField.value = null;
+        // return false;
+    });
+};
+
+changeName(hero);

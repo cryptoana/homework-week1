@@ -56,3 +56,15 @@ Follow the instructions to implment `resting`, `picking up items` and `equipping
 - Implement fighting an enemy. (how you do it is up to you!)
 
 - When an enemy or weapon gets clicked it gets deleted from the page
+
+
+
+REFLECTION
+
+Sections 1-3 went a bit easier than I expected once I got the ball rolling, though I'm was happily surprised that I managed to do them all. Especially the last 2 tasks. 
+
+I gave Section 4 a shot and I managed to complete 2.5 (?) tasks. I wasn't able to figure out, in the time allocated, how to replace the details that the "displayStats" function writes on the page, and instead they get appended. 
+
+I'd say I'm pretty happy with how I did and, looking back at my code, I wouldn't have dreamt to be able to learn to do all this in just one week. 
+
+I'm so looking forward to what's next! :)
