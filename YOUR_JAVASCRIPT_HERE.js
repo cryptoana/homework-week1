@@ -76,8 +76,8 @@ function displayStats() {
 
 displayStats();
 
+//allows user to change name and display new stats
 function changeName (obj) {
-    //allows user to change name and display new details
     const form = document.querySelector('form');
     form.addEventListener('submit', function (event) {
         event.preventDefault();
@@ -88,8 +88,7 @@ function changeName (obj) {
             displayStats();
         }
         inputField.value = null;
-        // return false;
-    });
+        });
 };
 
 changeName(hero);
